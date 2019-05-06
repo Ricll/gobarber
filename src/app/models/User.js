@@ -26,5 +26,12 @@ module.exports = (sequelize, DataTypes) => {
     return bcrypt.compare(password, this.password_hash)
   }
 
+  User.prototype.checkProvider = function (provider) {
+    provider = this.provider
+    if (provider === true) {
+
+    }
+  }
+
   return User
 }
